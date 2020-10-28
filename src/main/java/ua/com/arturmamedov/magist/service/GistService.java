@@ -77,17 +77,19 @@ public class GistService {
                         pib.setText("Getting gists ...");
                         GithubApiRequestExecutorManager executorManager = GithubApiRequestExecutorManager.getInstance();
 
+                        ArrayList<Gist> gists = null;
                         try {
-                            return new ArrayList<>(executorManager.getExecutor(ac).execute(pib,
+                            gists = new ArrayList<>(executorManager.getExecutor(ac).execute(pib,
                                     new GithubApiRequest.Get.JsonList<>("https://api.github.com/gists",
                                             Gist.class, "application/vnd.github.v3+json")));
                         } catch (IOException e) {
                             alertError(e);
-                            return null;
                         } finally {
                             lock.unlock();
                             Optional.ofNullable(onEndLoading).ifPresent(Runnable::run);
                         }
+
+                        return gists;
                     })
                     .ifPresent(onResult::onResult)
         ).start();

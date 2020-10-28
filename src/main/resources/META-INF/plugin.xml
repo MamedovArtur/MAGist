@@ -1,12 +1,12 @@
 <idea-plugin>
     <id>ua.com.arturmamedov.MAGist</id>
     <name>MAGist</name>
-    <version>1.0</version>
-    <vendor url="https://github.com/ItstepForstudent">Artur Mamedov</vendor>
+    <version>1.2</version>
+    <vendor url="https://github.com/MamedovArtur">Artur Mamedov</vendor>
     <description><![CDATA[
         <h1><b>MAGist Plugin</b></h1>
         <br/>
-        <a href="https://github.com/ItstepForstudent/MAGist.git" target="_blank">GitHub</a>
+        <a href="https://github.com/MamedovArtur/MAGist.git" target="_blank">GitHub</a>
         <em> Plugin for loading gist from github </em>
     ]]></description>
 
