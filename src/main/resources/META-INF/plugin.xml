@@ -1,7 +1,8 @@
 <idea-plugin>
+    <idea-version since-build="191.6183" until-build="203.*"></idea-version>
     <id>ua.com.arturmamedov.MAGist</id>
     <name>MAGist</name>
-    <version>1.2</version>
+    <version>1.4.0</version>
     <vendor url="https://github.com/MamedovArtur">Artur Mamedov</vendor>
     <description><![CDATA[
         <h1><b>MAGist Plugin</b></h1>
